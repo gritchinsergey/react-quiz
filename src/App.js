@@ -1,11 +1,17 @@
+import React, {Component} from 'react'
+import Layout from "./hoc/Layout/Layout"
 
-
-function App() {
+class App extends Component {
+  render(){
   return (
-    <div className="App">
-      <h1>Hello react!!!!</h1>
-    </div>
+      <Layout>
+      <div style={{width:400, border:'1px solid black'}}>
+        <h1>Layout work</h1>
+
+      </div>
+      </Layout>
   );
+  }
 }
 
 export default App;
